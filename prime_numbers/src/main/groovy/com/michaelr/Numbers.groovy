@@ -5,7 +5,7 @@ class Numbers {
     boolean prime = true
 
     (2..number).each {
-      if (number % it == 0 && number != it) {
+      if (number == 1 || number % it == 0 && number != it) {
         prime = false
         return true
       }

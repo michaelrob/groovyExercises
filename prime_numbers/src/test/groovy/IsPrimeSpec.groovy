@@ -1,8 +1,18 @@
 import spock.lang.*
+import com.michaelr.IsPrime
 
 class IsPrimeSpec extends Specification {
-  def setup() {}          // run before every feature method
-  def cleanup() {}        // run after every feature method
-  def setupSpec() {}     // run before the first feature method
-  def cleanupSpec() {}   // run after the last feature method
+  def setup() {
+    IsPrime isPrime = new IsPrime()
+  }          // run before every feature method
+
+  def "should return true for prime number"() {
+    expect:
+    isPrime == true
+  }
+
+  def "should return false for non-prime number"() {
+    expect:
+    isPrime == false
+  }
 }

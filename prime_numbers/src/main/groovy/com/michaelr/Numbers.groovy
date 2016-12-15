@@ -1,6 +1,6 @@
 package com.michaelr
 
-class IsPrime {
+class Numbers {
   boolean isPrime(int number) {
     boolean prime = true
 

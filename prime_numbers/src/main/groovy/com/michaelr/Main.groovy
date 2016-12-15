@@ -1,10 +1,10 @@
 package com.michaelr
 
-import com.michaelr.IsPrime
+import com.michaelr.Numbers
 
 class Main {
   static void main(String[] args) {
-    IsPrime prime = new IsPrime()
+    Numbers prime = new Numbers()
     println prime.isPrime(50)
   }
 }
